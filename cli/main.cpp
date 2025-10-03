@@ -55,6 +55,16 @@ void renderAddGoals() {
   systemMsg = "✅ Goal added!";
 }
 
+// TODO: Implement Manage Options
+void renderManageGoal() {
+  std::cout << "TODO: To be developed\n";
+}
+
+// TODO: Implement random task function
+void renderRandomTask() {
+  std::cout << "TODO: Develop random task functions\n";
+}
+
 int main() {
   char choice = ' ';
 
@@ -65,6 +75,8 @@ int main() {
 
     switch (choice) {
       case 'g': renderAddGoals(); break;
+      case 'm': renderManageGoal(); break;
+      case 't': renderRandomTask(); break;
       case 'q': std::cout << "Goodbye!\n"; return 0;
       default: systemMsg = "Invalid input!";
     }
