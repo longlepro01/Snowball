@@ -1,0 +1,3 @@
+/home/longlepro01/codingProjs/Snowball/cli/build/CMakeFiles/snowball.dir
+/home/longlepro01/codingProjs/Snowball/cli/build/CMakeFiles/edit_cache.dir
+/home/longlepro01/codingProjs/Snowball/cli/build/CMakeFiles/rebuild_cache.dir
