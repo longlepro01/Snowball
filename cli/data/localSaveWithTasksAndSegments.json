@@ -1,0 +1,94 @@
+{
+  "goals": [
+    {
+      "id": "1",
+      "title": "Learn Japanese",
+      "description": "Master basic Japanese conversation and reading skills for travel and culture appreciation",
+      "segments": [
+        {
+          "title": "Basic Vocabulary",
+          "description": "Learn essential words and phrases for daily conversation",
+          "status": 1,
+          "tasks": [
+            {
+              "title": "Learn greetings",
+              "description": "Master basic greetings like ohayo, konnichiwa, konbanwa",
+              "done": true,
+              "nextTask": null
+            },
+            {
+              "title": "Numbers 1-100",
+              "description": "Learn to count and use numbers in basic contexts",
+              "done": false,
+              "nextTask": null
+            }
+          ]
+        },
+        {
+          "title": "Hiragana Reading",
+          "description": "Master the hiragana writing system",
+          "status": 0,
+          "tasks": [
+            {
+              "title": "A-row characters",
+              "description": "Learn あ, い, う, え, お",
+              "done": false,
+              "nextTask": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "2",
+      "title": "Complete Marathon",
+      "description": "Train for and complete a full 26.2 mile marathon race",
+      "segments": [
+        {
+          "title": "Build Base Fitness",
+          "description": "Establish consistent running routine and endurance base",
+          "status": 2,
+          "tasks": [
+            {
+              "title": "Run 3 miles consistently",
+              "description": "Complete 3-mile runs 3 times per week for 4 weeks",
+              "done": true,
+              "nextTask": null
+            },
+            {
+              "title": "First 10K race",
+              "description": "Complete a 10K race to test fitness level",
+              "done": true,
+              "nextTask": null
+            }
+          ]
+        },
+        {
+          "title": "Long Distance Training",
+          "description": "Build up to marathon distance through progressive long runs",
+          "status": 1,
+          "tasks": [
+            {
+              "title": "15-mile long run",
+              "description": "Complete first 15-mile training run",
+              "done": false,
+              "nextTask": null
+            },
+            {
+              "title": "20-mile long run",
+              "description": "Complete 20-mile run as marathon preparation",
+              "done": false,
+              "nextTask": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "3",
+      "title": "",
+      "description": "An edge case goal with minimal data to test error handling",
+      "segments": []
+    }
+  ]
+}

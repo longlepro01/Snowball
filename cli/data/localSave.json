@@ -1,0 +1,19 @@
+{
+  "goals": [
+    {
+      "id": "1",
+      "title": "Learn Japanese",
+      "description": "Master basic Japanese conversation and reading skills for travel and culture appreciation"
+    },
+    {
+      "id": "2", 
+      "title": "Complete Marathon",
+      "description": "Train for and complete a full 26.2 mile marathon race"
+    },
+    {
+      "id": "3",
+      "title": "",
+      "description": "An edge case goal with minimal data to test error handling"
+    }
+  ]
+}

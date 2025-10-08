@@ -58,15 +58,15 @@ int temp_id = 99;
 //     j.at("segments").get_to(g.segments); // vector<Segment> handled automatically
 // }
 
-std::vector<Goal> loadDataFromFile() {
-  std::ifstream file("./data/localSave.json");
+std::vector<Goal> loadDataFromFile(std::string filename) {
+  std::ifstream file(filename);
   json j;
   file >> j;
   std::vector<Goal> goals;
 
   for (const auto& goalJson : j["goals"]) {
     Goal goal;
-    goal.id = goalJson.value("id", 0);
+    goal.id = goalJson.value("id", "");
     goal.title = goalJson["title"];
     goal.description = goalJson["description"];
 
@@ -78,6 +78,23 @@ std::vector<Goal> loadDataFromFile() {
 void saveData() {
   // TODO: Implement writing data to json file
 }
+
+// Control
+char getKey() {
+    char buf = 0;
+    struct termios old = {0};
+    if (tcgetattr(0, &old) < 0) perror("tcsetattr()");
+    old.c_lflag &= ~ICANON; // disable buffered I/O
+    old.c_lflag &= ~ECHO;   // disable echo
+    if (tcsetattr(0, TCSANOW, &old) < 0) perror("tcsetattr ICANON");
+    if (read(0, &buf, 1) < 0) perror("read()");
+    old.c_lflag |= ICANON;
+    old.c_lflag |= ECHO;
+    if (tcsetattr(0, TCSADRAIN, &old) < 0) perror("tcsetattr ~ICANON");
+    return buf;
+}
+
+// Screens 
 void userCommandInput() {
   if (!systemMsg.empty()) {
     std::cout << "System Message: " + systemMsg << std::endl;
@@ -87,44 +104,70 @@ void userCommandInput() {
   std::cout << "Choose an option: ";
 }
 
+void renderAppHeader() {
+  std::cout << "\n❄️  Snowball – Task-centric Goal Tracker\n";
+  std::cout << "--------------------------------------\n";
+}
+
+void renderDashboard() {
+  renderAppHeader();
+  std::cout << "\nTODO: implement overview of all goals.\n\n\n\n\n\n";
+  std::cout << "Add [G]oals \t";
+  std::cout << "[V]iew goals \t";
+  std::cout << "Random [T]ask \t";
+  std::cout << "[Q]Exit\n";
+  userCommandInput();
+}
+
 void handleDashboardInput() {
+  renderDashboard();
   systemMsg.clear();
   char key = ' ';
-  std::cin >> key;
-  std::cin.ignore();
+  // std::cin >> key;
+  // std::cin.ignore();
+  key = getKey();
   switch (key) {
     case 'g': currentScreen = Screen::AddGoal; break;
-    case 'm': currentScreen = Screen::ManageGoal; break;
+    case 'v': currentScreen = Screen::ManageGoal; break;
     case 't': currentScreen = Screen::RandomTask; break;
     case 'q': saveData(); std::cout << "Goodbye!\n"; running = false;
     default: systemMsg = "Invalid input!";
   }
 }
-void renderDashboard() {
-  std::cout << "\n❄️  Snowball – Task-centric Goal Tracker\n";
-  std::cout << "--------------------------------------\n";
-  std::cout << "\nTODO: implement overview of all goals.\n\n\n\n\n\n";
-  std::cout << "Add [G]oals \t";
-  std::cout << "[M]anage goals \t";
-  std::cout << "Random [T]ask \t";
-  std::cout << "[Q]Exit\n";
-  userCommandInput();
-  // handleDashboardInput();
+
+void renderAddGoal(std::string title, std::string description) {
+  renderAppHeader();
+  if (!title.empty()) {
+    std::cout << "Goal title: " << title << std::endl;
+  }
+  if (!description.empty()) {
+    std::cout << "Goal description: " << description << std::endl;
+  }  
+  std::cout << std::endl << std::endl;
 }
 
 void handleAddGoal() {
   std::string title, description;
+  
+  renderAddGoal(title, description);
+
+  std::cout << "Enter goal title: ";
+  std::getline(std::cin, title);
 
   // Get user input
-  do {
-    std::cout << "Enter goal title [B]: ";
+  while (title.empty()) {
+    renderAddGoal(title, description);
+    std::cout << "Enter goal title (cannot be empty): ";
     std::getline(std::cin, title);
-  } while (title.empty());
+  }
+
   if (title == "b" || title == "B") {
     systemMsg = "Cancelled.";
     currentScreen = Screen::Dashboard;
     return;
   }
+
+  renderAddGoal(title, description);
   std::cout << "Enter goal description (can be empty): ";
   std::getline(std::cin, description);
 
@@ -139,21 +182,30 @@ void handleAddGoal() {
   currentScreen = Screen::Dashboard;
 }
 
-void renderAddGoal() {
-  std::cout << "\n❄️  Snowball – Task-centric Goal Tracker\n";
-  std::cout << "--------------------------------------\n";
-  std::cout << "\nTODO: implement add goal view.\n\n\n\n\n\n";
+void renderViewGoal() {
+  renderAppHeader();
+  for (int i = 0; i < goals.size(); i++) {
+    std::cout << "Goal " << i + 1 << std::endl;
+    std::cout << goals[i].title << std::endl;
+    std::cout << goals[i].description << std::endl;
+    std::cout << "------------------------" << std::endl;
+  }
 }
 
 // TODO: Implement Manage Options
-void handleManageGoal() {
-  systemMsg = "TODO: Implement manage goal.";
+void handleViewGoal() {
+  char key = ' ';
+  systemMsg = "TODO: Implement view goal.";
+  renderViewGoal();
+
+  key = getKey();
+
   currentScreen = Screen::Dashboard;
 }
-void renderManageGoal() {
-  std::cout << "TODO: Implement manage goal\n\n\n\n\n";
 
-  // handleManageGoal();
+void renderRandomTask() {
+  renderAppHeader();
+  std::cout << "TODO: Implement random task functions\n\n\n\n\n";
 }
 
 // TODO: Implement random task function
@@ -161,76 +213,23 @@ void handleRandomTask() {
   systemMsg = "TODO: Implement random task functions";
   currentScreen = Screen::Dashboard;
 }
-void renderRandomTask() {
-  std::cout << "TODO: Implement random task functions\n\n\n\n\n";
-
-  // handleRandomTask();
-}
 
 int main() {
   // Load data
-  std::ifstream file("./data/localSave.json");
+  goals = loadDataFromFile("../data/localSave.json");
 
   while (running) {
-  //   switch (currentScreen) {
-  //     case Screen::Dashboard: renderDashboard(); break;
-  //     case Screen::AddGoal: renderAddGoal(); break;
-  //     case Screen::ManageGoal: renderManageGoal(); break;
-  //     case Screen::RandomTask: renderRandomTask(); break;
-  //   }
-  // }
-
-    // Special case: AddGoal needs its own input flow
-    // if (currentScreen == Screen::AddGoal) {
-    //   std::cout << "\n❄️  Snowball – Task-centric Goal Tracker\n";
-    //   std::cout << "--------------------------------------\n";
-    //   std::cout << "\n📝 Add New Goal\n\n";
-    //
-    //   std::string title, description;
-    //
-    //   std::cout << "Enter goal title ([B] to cancel): ";
-    //   std::getline(std::cin, title);
-    //
-    //   if (title == "b" || title == "B") {
-    //     systemMsg = "Cancelled.";
-    //     currentScreen = Screen::Dashboard;
-    //     continue;
-    //   }
-    //
-    //   if (title.empty()) {
-    //     systemMsg = "❌ Title cannot be empty!";
-    //     continue;
-    //   }
-    //
-    //   std::cout << "Enter goal description (Enter to skip): ";
-    //   std::getline(std::cin, description);
-    //
-    //   Goal goal;
-    //   goal.id = std::to_string(temp_id++);
-    //   goal.title = title;
-    //   goal.description = description;
-    //   goals.push_back(goal);
-    //
-    //   systemMsg = "✅ Goal added: " + title;
-    //   currentScreen = Screen::Dashboard;
-    //   continue;
-    // }
-    // Render, get input, handle - all in sequence
-    switch (currentScreen) {
+   switch (currentScreen) {
       case Screen::Dashboard: 
-        renderDashboard(); 
-        // std::getline(std::cin input);
         handleDashboardInput();
         break;
 
       case Screen::AddGoal:
-        renderAddGoal();
         handleAddGoal();
+        break;
 
       case Screen::ManageGoal: 
-        renderManageGoal(); 
-        // std::getline(std::cin, input);
-        handleManageGoal();
+        handleViewGoal();
         break;
 
       case Screen::RandomTask: 
@@ -241,5 +240,5 @@ int main() {
     }
   }
 
-  // TODO: save data to json file (../backend/data)
+  // TODO: save data to json file
 }
