@@ -129,29 +129,197 @@ snowball/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/snowball.dir/build.make CMakeFiles/snowball.dir/build
 .PHONY : snowball/fast
 
-main.o: main.cpp.o
-.PHONY : main.o
+src/helpers/data_manager.o: src/helpers/data_manager.cpp.o
+.PHONY : src/helpers/data_manager.o
 
 # target to build an object file
-main.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/snowball.dir/build.make CMakeFiles/snowball.dir/main.cpp.o
-.PHONY : main.cpp.o
+src/helpers/data_manager.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/snowball.dir/build.make CMakeFiles/snowball.dir/src/helpers/data_manager.cpp.o
+.PHONY : src/helpers/data_manager.cpp.o
 
-main.i: main.cpp.i
-.PHONY : main.i
+src/helpers/data_manager.i: src/helpers/data_manager.cpp.i
+.PHONY : src/helpers/data_manager.i
 
 # target to preprocess a source file
-main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/snowball.dir/build.make CMakeFiles/snowball.dir/main.cpp.i
-.PHONY : main.cpp.i
+src/helpers/data_manager.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/snowball.dir/build.make CMakeFiles/snowball.dir/src/helpers/data_manager.cpp.i
+.PHONY : src/helpers/data_manager.cpp.i
 
-main.s: main.cpp.s
-.PHONY : main.s
+src/helpers/data_manager.s: src/helpers/data_manager.cpp.s
+.PHONY : src/helpers/data_manager.s
 
 # target to generate assembly for a file
-main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/snowball.dir/build.make CMakeFiles/snowball.dir/main.cpp.s
-.PHONY : main.cpp.s
+src/helpers/data_manager.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/snowball.dir/build.make CMakeFiles/snowball.dir/src/helpers/data_manager.cpp.s
+.PHONY : src/helpers/data_manager.cpp.s
+
+src/helpers/utils.o: src/helpers/utils.cpp.o
+.PHONY : src/helpers/utils.o
+
+# target to build an object file
+src/helpers/utils.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/snowball.dir/build.make CMakeFiles/snowball.dir/src/helpers/utils.cpp.o
+.PHONY : src/helpers/utils.cpp.o
+
+src/helpers/utils.i: src/helpers/utils.cpp.i
+.PHONY : src/helpers/utils.i
+
+# target to preprocess a source file
+src/helpers/utils.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/snowball.dir/build.make CMakeFiles/snowball.dir/src/helpers/utils.cpp.i
+.PHONY : src/helpers/utils.cpp.i
+
+src/helpers/utils.s: src/helpers/utils.cpp.s
+.PHONY : src/helpers/utils.s
+
+# target to generate assembly for a file
+src/helpers/utils.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/snowball.dir/build.make CMakeFiles/snowball.dir/src/helpers/utils.cpp.s
+.PHONY : src/helpers/utils.cpp.s
+
+src/main.o: src/main.cpp.o
+.PHONY : src/main.o
+
+# target to build an object file
+src/main.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/snowball.dir/build.make CMakeFiles/snowball.dir/src/main.cpp.o
+.PHONY : src/main.cpp.o
+
+src/main.i: src/main.cpp.i
+.PHONY : src/main.i
+
+# target to preprocess a source file
+src/main.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/snowball.dir/build.make CMakeFiles/snowball.dir/src/main.cpp.i
+.PHONY : src/main.cpp.i
+
+src/main.s: src/main.cpp.s
+.PHONY : src/main.s
+
+# target to generate assembly for a file
+src/main.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/snowball.dir/build.make CMakeFiles/snowball.dir/src/main.cpp.s
+.PHONY : src/main.cpp.s
+
+src/screens/add_goal.o: src/screens/add_goal.cpp.o
+.PHONY : src/screens/add_goal.o
+
+# target to build an object file
+src/screens/add_goal.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/snowball.dir/build.make CMakeFiles/snowball.dir/src/screens/add_goal.cpp.o
+.PHONY : src/screens/add_goal.cpp.o
+
+src/screens/add_goal.i: src/screens/add_goal.cpp.i
+.PHONY : src/screens/add_goal.i
+
+# target to preprocess a source file
+src/screens/add_goal.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/snowball.dir/build.make CMakeFiles/snowball.dir/src/screens/add_goal.cpp.i
+.PHONY : src/screens/add_goal.cpp.i
+
+src/screens/add_goal.s: src/screens/add_goal.cpp.s
+.PHONY : src/screens/add_goal.s
+
+# target to generate assembly for a file
+src/screens/add_goal.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/snowball.dir/build.make CMakeFiles/snowball.dir/src/screens/add_goal.cpp.s
+.PHONY : src/screens/add_goal.cpp.s
+
+src/screens/dashboard.o: src/screens/dashboard.cpp.o
+.PHONY : src/screens/dashboard.o
+
+# target to build an object file
+src/screens/dashboard.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/snowball.dir/build.make CMakeFiles/snowball.dir/src/screens/dashboard.cpp.o
+.PHONY : src/screens/dashboard.cpp.o
+
+src/screens/dashboard.i: src/screens/dashboard.cpp.i
+.PHONY : src/screens/dashboard.i
+
+# target to preprocess a source file
+src/screens/dashboard.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/snowball.dir/build.make CMakeFiles/snowball.dir/src/screens/dashboard.cpp.i
+.PHONY : src/screens/dashboard.cpp.i
+
+src/screens/dashboard.s: src/screens/dashboard.cpp.s
+.PHONY : src/screens/dashboard.s
+
+# target to generate assembly for a file
+src/screens/dashboard.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/snowball.dir/build.make CMakeFiles/snowball.dir/src/screens/dashboard.cpp.s
+.PHONY : src/screens/dashboard.cpp.s
+
+src/screens/random_task.o: src/screens/random_task.cpp.o
+.PHONY : src/screens/random_task.o
+
+# target to build an object file
+src/screens/random_task.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/snowball.dir/build.make CMakeFiles/snowball.dir/src/screens/random_task.cpp.o
+.PHONY : src/screens/random_task.cpp.o
+
+src/screens/random_task.i: src/screens/random_task.cpp.i
+.PHONY : src/screens/random_task.i
+
+# target to preprocess a source file
+src/screens/random_task.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/snowball.dir/build.make CMakeFiles/snowball.dir/src/screens/random_task.cpp.i
+.PHONY : src/screens/random_task.cpp.i
+
+src/screens/random_task.s: src/screens/random_task.cpp.s
+.PHONY : src/screens/random_task.s
+
+# target to generate assembly for a file
+src/screens/random_task.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/snowball.dir/build.make CMakeFiles/snowball.dir/src/screens/random_task.cpp.s
+.PHONY : src/screens/random_task.cpp.s
+
+src/screens/ui.o: src/screens/ui.cpp.o
+.PHONY : src/screens/ui.o
+
+# target to build an object file
+src/screens/ui.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/snowball.dir/build.make CMakeFiles/snowball.dir/src/screens/ui.cpp.o
+.PHONY : src/screens/ui.cpp.o
+
+src/screens/ui.i: src/screens/ui.cpp.i
+.PHONY : src/screens/ui.i
+
+# target to preprocess a source file
+src/screens/ui.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/snowball.dir/build.make CMakeFiles/snowball.dir/src/screens/ui.cpp.i
+.PHONY : src/screens/ui.cpp.i
+
+src/screens/ui.s: src/screens/ui.cpp.s
+.PHONY : src/screens/ui.s
+
+# target to generate assembly for a file
+src/screens/ui.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/snowball.dir/build.make CMakeFiles/snowball.dir/src/screens/ui.cpp.s
+.PHONY : src/screens/ui.cpp.s
+
+src/screens/view_goals.o: src/screens/view_goals.cpp.o
+.PHONY : src/screens/view_goals.o
+
+# target to build an object file
+src/screens/view_goals.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/snowball.dir/build.make CMakeFiles/snowball.dir/src/screens/view_goals.cpp.o
+.PHONY : src/screens/view_goals.cpp.o
+
+src/screens/view_goals.i: src/screens/view_goals.cpp.i
+.PHONY : src/screens/view_goals.i
+
+# target to preprocess a source file
+src/screens/view_goals.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/snowball.dir/build.make CMakeFiles/snowball.dir/src/screens/view_goals.cpp.i
+.PHONY : src/screens/view_goals.cpp.i
+
+src/screens/view_goals.s: src/screens/view_goals.cpp.s
+.PHONY : src/screens/view_goals.s
+
+# target to generate assembly for a file
+src/screens/view_goals.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/snowball.dir/build.make CMakeFiles/snowball.dir/src/screens/view_goals.cpp.s
+.PHONY : src/screens/view_goals.cpp.s
 
 # Help Target
 help:
@@ -162,9 +330,30 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... snowball"
-	@echo "... main.o"
-	@echo "... main.i"
-	@echo "... main.s"
+	@echo "... src/helpers/data_manager.o"
+	@echo "... src/helpers/data_manager.i"
+	@echo "... src/helpers/data_manager.s"
+	@echo "... src/helpers/utils.o"
+	@echo "... src/helpers/utils.i"
+	@echo "... src/helpers/utils.s"
+	@echo "... src/main.o"
+	@echo "... src/main.i"
+	@echo "... src/main.s"
+	@echo "... src/screens/add_goal.o"
+	@echo "... src/screens/add_goal.i"
+	@echo "... src/screens/add_goal.s"
+	@echo "... src/screens/dashboard.o"
+	@echo "... src/screens/dashboard.i"
+	@echo "... src/screens/dashboard.s"
+	@echo "... src/screens/random_task.o"
+	@echo "... src/screens/random_task.i"
+	@echo "... src/screens/random_task.s"
+	@echo "... src/screens/ui.o"
+	@echo "... src/screens/ui.i"
+	@echo "... src/screens/ui.s"
+	@echo "... src/screens/view_goals.o"
+	@echo "... src/screens/view_goals.i"
+	@echo "... src/screens/view_goals.s"
 .PHONY : help
 
 

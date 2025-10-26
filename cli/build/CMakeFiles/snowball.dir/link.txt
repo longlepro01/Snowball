@@ -1,1 +1,1 @@
-/usr/bin/c++ CMakeFiles/snowball.dir/main.cpp.o -o snowball 
+/usr/bin/c++ CMakeFiles/snowball.dir/src/main.cpp.o CMakeFiles/snowball.dir/src/helpers/data_manager.cpp.o CMakeFiles/snowball.dir/src/helpers/utils.cpp.o CMakeFiles/snowball.dir/src/screens/ui.cpp.o CMakeFiles/snowball.dir/src/screens/dashboard.cpp.o CMakeFiles/snowball.dir/src/screens/add_goal.cpp.o CMakeFiles/snowball.dir/src/screens/view_goals.cpp.o CMakeFiles/snowball.dir/src/screens/random_task.cpp.o -o snowball 

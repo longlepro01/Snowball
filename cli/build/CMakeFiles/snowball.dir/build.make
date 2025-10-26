@@ -69,31 +69,143 @@ include CMakeFiles/snowball.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/snowball.dir/flags.make
 
-CMakeFiles/snowball.dir/main.cpp.o: CMakeFiles/snowball.dir/flags.make
-CMakeFiles/snowball.dir/main.cpp.o: ../main.cpp
-CMakeFiles/snowball.dir/main.cpp.o: CMakeFiles/snowball.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/longlepro01/codingProjs/Snowball/cli/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/snowball.dir/main.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/snowball.dir/main.cpp.o -MF CMakeFiles/snowball.dir/main.cpp.o.d -o CMakeFiles/snowball.dir/main.cpp.o -c /home/longlepro01/codingProjs/Snowball/cli/main.cpp
+CMakeFiles/snowball.dir/src/main.cpp.o: CMakeFiles/snowball.dir/flags.make
+CMakeFiles/snowball.dir/src/main.cpp.o: ../src/main.cpp
+CMakeFiles/snowball.dir/src/main.cpp.o: CMakeFiles/snowball.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/longlepro01/codingProjs/Snowball/cli/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/snowball.dir/src/main.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/snowball.dir/src/main.cpp.o -MF CMakeFiles/snowball.dir/src/main.cpp.o.d -o CMakeFiles/snowball.dir/src/main.cpp.o -c /home/longlepro01/codingProjs/Snowball/cli/src/main.cpp
 
-CMakeFiles/snowball.dir/main.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/snowball.dir/main.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/longlepro01/codingProjs/Snowball/cli/main.cpp > CMakeFiles/snowball.dir/main.cpp.i
+CMakeFiles/snowball.dir/src/main.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/snowball.dir/src/main.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/longlepro01/codingProjs/Snowball/cli/src/main.cpp > CMakeFiles/snowball.dir/src/main.cpp.i
 
-CMakeFiles/snowball.dir/main.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/snowball.dir/main.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/longlepro01/codingProjs/Snowball/cli/main.cpp -o CMakeFiles/snowball.dir/main.cpp.s
+CMakeFiles/snowball.dir/src/main.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/snowball.dir/src/main.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/longlepro01/codingProjs/Snowball/cli/src/main.cpp -o CMakeFiles/snowball.dir/src/main.cpp.s
+
+CMakeFiles/snowball.dir/src/helpers/data_manager.cpp.o: CMakeFiles/snowball.dir/flags.make
+CMakeFiles/snowball.dir/src/helpers/data_manager.cpp.o: ../src/helpers/data_manager.cpp
+CMakeFiles/snowball.dir/src/helpers/data_manager.cpp.o: CMakeFiles/snowball.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/longlepro01/codingProjs/Snowball/cli/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/snowball.dir/src/helpers/data_manager.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/snowball.dir/src/helpers/data_manager.cpp.o -MF CMakeFiles/snowball.dir/src/helpers/data_manager.cpp.o.d -o CMakeFiles/snowball.dir/src/helpers/data_manager.cpp.o -c /home/longlepro01/codingProjs/Snowball/cli/src/helpers/data_manager.cpp
+
+CMakeFiles/snowball.dir/src/helpers/data_manager.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/snowball.dir/src/helpers/data_manager.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/longlepro01/codingProjs/Snowball/cli/src/helpers/data_manager.cpp > CMakeFiles/snowball.dir/src/helpers/data_manager.cpp.i
+
+CMakeFiles/snowball.dir/src/helpers/data_manager.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/snowball.dir/src/helpers/data_manager.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/longlepro01/codingProjs/Snowball/cli/src/helpers/data_manager.cpp -o CMakeFiles/snowball.dir/src/helpers/data_manager.cpp.s
+
+CMakeFiles/snowball.dir/src/helpers/utils.cpp.o: CMakeFiles/snowball.dir/flags.make
+CMakeFiles/snowball.dir/src/helpers/utils.cpp.o: ../src/helpers/utils.cpp
+CMakeFiles/snowball.dir/src/helpers/utils.cpp.o: CMakeFiles/snowball.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/longlepro01/codingProjs/Snowball/cli/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/snowball.dir/src/helpers/utils.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/snowball.dir/src/helpers/utils.cpp.o -MF CMakeFiles/snowball.dir/src/helpers/utils.cpp.o.d -o CMakeFiles/snowball.dir/src/helpers/utils.cpp.o -c /home/longlepro01/codingProjs/Snowball/cli/src/helpers/utils.cpp
+
+CMakeFiles/snowball.dir/src/helpers/utils.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/snowball.dir/src/helpers/utils.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/longlepro01/codingProjs/Snowball/cli/src/helpers/utils.cpp > CMakeFiles/snowball.dir/src/helpers/utils.cpp.i
+
+CMakeFiles/snowball.dir/src/helpers/utils.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/snowball.dir/src/helpers/utils.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/longlepro01/codingProjs/Snowball/cli/src/helpers/utils.cpp -o CMakeFiles/snowball.dir/src/helpers/utils.cpp.s
+
+CMakeFiles/snowball.dir/src/screens/ui.cpp.o: CMakeFiles/snowball.dir/flags.make
+CMakeFiles/snowball.dir/src/screens/ui.cpp.o: ../src/screens/ui.cpp
+CMakeFiles/snowball.dir/src/screens/ui.cpp.o: CMakeFiles/snowball.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/longlepro01/codingProjs/Snowball/cli/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/snowball.dir/src/screens/ui.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/snowball.dir/src/screens/ui.cpp.o -MF CMakeFiles/snowball.dir/src/screens/ui.cpp.o.d -o CMakeFiles/snowball.dir/src/screens/ui.cpp.o -c /home/longlepro01/codingProjs/Snowball/cli/src/screens/ui.cpp
+
+CMakeFiles/snowball.dir/src/screens/ui.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/snowball.dir/src/screens/ui.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/longlepro01/codingProjs/Snowball/cli/src/screens/ui.cpp > CMakeFiles/snowball.dir/src/screens/ui.cpp.i
+
+CMakeFiles/snowball.dir/src/screens/ui.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/snowball.dir/src/screens/ui.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/longlepro01/codingProjs/Snowball/cli/src/screens/ui.cpp -o CMakeFiles/snowball.dir/src/screens/ui.cpp.s
+
+CMakeFiles/snowball.dir/src/screens/dashboard.cpp.o: CMakeFiles/snowball.dir/flags.make
+CMakeFiles/snowball.dir/src/screens/dashboard.cpp.o: ../src/screens/dashboard.cpp
+CMakeFiles/snowball.dir/src/screens/dashboard.cpp.o: CMakeFiles/snowball.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/longlepro01/codingProjs/Snowball/cli/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/snowball.dir/src/screens/dashboard.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/snowball.dir/src/screens/dashboard.cpp.o -MF CMakeFiles/snowball.dir/src/screens/dashboard.cpp.o.d -o CMakeFiles/snowball.dir/src/screens/dashboard.cpp.o -c /home/longlepro01/codingProjs/Snowball/cli/src/screens/dashboard.cpp
+
+CMakeFiles/snowball.dir/src/screens/dashboard.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/snowball.dir/src/screens/dashboard.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/longlepro01/codingProjs/Snowball/cli/src/screens/dashboard.cpp > CMakeFiles/snowball.dir/src/screens/dashboard.cpp.i
+
+CMakeFiles/snowball.dir/src/screens/dashboard.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/snowball.dir/src/screens/dashboard.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/longlepro01/codingProjs/Snowball/cli/src/screens/dashboard.cpp -o CMakeFiles/snowball.dir/src/screens/dashboard.cpp.s
+
+CMakeFiles/snowball.dir/src/screens/add_goal.cpp.o: CMakeFiles/snowball.dir/flags.make
+CMakeFiles/snowball.dir/src/screens/add_goal.cpp.o: ../src/screens/add_goal.cpp
+CMakeFiles/snowball.dir/src/screens/add_goal.cpp.o: CMakeFiles/snowball.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/longlepro01/codingProjs/Snowball/cli/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/snowball.dir/src/screens/add_goal.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/snowball.dir/src/screens/add_goal.cpp.o -MF CMakeFiles/snowball.dir/src/screens/add_goal.cpp.o.d -o CMakeFiles/snowball.dir/src/screens/add_goal.cpp.o -c /home/longlepro01/codingProjs/Snowball/cli/src/screens/add_goal.cpp
+
+CMakeFiles/snowball.dir/src/screens/add_goal.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/snowball.dir/src/screens/add_goal.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/longlepro01/codingProjs/Snowball/cli/src/screens/add_goal.cpp > CMakeFiles/snowball.dir/src/screens/add_goal.cpp.i
+
+CMakeFiles/snowball.dir/src/screens/add_goal.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/snowball.dir/src/screens/add_goal.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/longlepro01/codingProjs/Snowball/cli/src/screens/add_goal.cpp -o CMakeFiles/snowball.dir/src/screens/add_goal.cpp.s
+
+CMakeFiles/snowball.dir/src/screens/view_goals.cpp.o: CMakeFiles/snowball.dir/flags.make
+CMakeFiles/snowball.dir/src/screens/view_goals.cpp.o: ../src/screens/view_goals.cpp
+CMakeFiles/snowball.dir/src/screens/view_goals.cpp.o: CMakeFiles/snowball.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/longlepro01/codingProjs/Snowball/cli/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/snowball.dir/src/screens/view_goals.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/snowball.dir/src/screens/view_goals.cpp.o -MF CMakeFiles/snowball.dir/src/screens/view_goals.cpp.o.d -o CMakeFiles/snowball.dir/src/screens/view_goals.cpp.o -c /home/longlepro01/codingProjs/Snowball/cli/src/screens/view_goals.cpp
+
+CMakeFiles/snowball.dir/src/screens/view_goals.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/snowball.dir/src/screens/view_goals.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/longlepro01/codingProjs/Snowball/cli/src/screens/view_goals.cpp > CMakeFiles/snowball.dir/src/screens/view_goals.cpp.i
+
+CMakeFiles/snowball.dir/src/screens/view_goals.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/snowball.dir/src/screens/view_goals.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/longlepro01/codingProjs/Snowball/cli/src/screens/view_goals.cpp -o CMakeFiles/snowball.dir/src/screens/view_goals.cpp.s
+
+CMakeFiles/snowball.dir/src/screens/random_task.cpp.o: CMakeFiles/snowball.dir/flags.make
+CMakeFiles/snowball.dir/src/screens/random_task.cpp.o: ../src/screens/random_task.cpp
+CMakeFiles/snowball.dir/src/screens/random_task.cpp.o: CMakeFiles/snowball.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/longlepro01/codingProjs/Snowball/cli/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/snowball.dir/src/screens/random_task.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/snowball.dir/src/screens/random_task.cpp.o -MF CMakeFiles/snowball.dir/src/screens/random_task.cpp.o.d -o CMakeFiles/snowball.dir/src/screens/random_task.cpp.o -c /home/longlepro01/codingProjs/Snowball/cli/src/screens/random_task.cpp
+
+CMakeFiles/snowball.dir/src/screens/random_task.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/snowball.dir/src/screens/random_task.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/longlepro01/codingProjs/Snowball/cli/src/screens/random_task.cpp > CMakeFiles/snowball.dir/src/screens/random_task.cpp.i
+
+CMakeFiles/snowball.dir/src/screens/random_task.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/snowball.dir/src/screens/random_task.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/longlepro01/codingProjs/Snowball/cli/src/screens/random_task.cpp -o CMakeFiles/snowball.dir/src/screens/random_task.cpp.s
 
 # Object files for target snowball
 snowball_OBJECTS = \
-"CMakeFiles/snowball.dir/main.cpp.o"
+"CMakeFiles/snowball.dir/src/main.cpp.o" \
+"CMakeFiles/snowball.dir/src/helpers/data_manager.cpp.o" \
+"CMakeFiles/snowball.dir/src/helpers/utils.cpp.o" \
+"CMakeFiles/snowball.dir/src/screens/ui.cpp.o" \
+"CMakeFiles/snowball.dir/src/screens/dashboard.cpp.o" \
+"CMakeFiles/snowball.dir/src/screens/add_goal.cpp.o" \
+"CMakeFiles/snowball.dir/src/screens/view_goals.cpp.o" \
+"CMakeFiles/snowball.dir/src/screens/random_task.cpp.o"
 
 # External object files for target snowball
 snowball_EXTERNAL_OBJECTS =
 
-snowball: CMakeFiles/snowball.dir/main.cpp.o
+snowball: CMakeFiles/snowball.dir/src/main.cpp.o
+snowball: CMakeFiles/snowball.dir/src/helpers/data_manager.cpp.o
+snowball: CMakeFiles/snowball.dir/src/helpers/utils.cpp.o
+snowball: CMakeFiles/snowball.dir/src/screens/ui.cpp.o
+snowball: CMakeFiles/snowball.dir/src/screens/dashboard.cpp.o
+snowball: CMakeFiles/snowball.dir/src/screens/add_goal.cpp.o
+snowball: CMakeFiles/snowball.dir/src/screens/view_goals.cpp.o
+snowball: CMakeFiles/snowball.dir/src/screens/random_task.cpp.o
 snowball: CMakeFiles/snowball.dir/build.make
 snowball: CMakeFiles/snowball.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/longlepro01/codingProjs/Snowball/cli/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable snowball"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/longlepro01/codingProjs/Snowball/cli/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Linking CXX executable snowball"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/snowball.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

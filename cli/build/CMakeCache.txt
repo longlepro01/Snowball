@@ -145,7 +145,7 @@ CMAKE_PROJECT_DESCRIPTION:STATIC=
 CMAKE_PROJECT_HOMEPAGE_URL:STATIC=
 
 //Value Computed by CMake
-CMAKE_PROJECT_NAME:STATIC=SnowballCLI
+CMAKE_PROJECT_NAME:STATIC=Snowball
 
 //Path to a program.
 CMAKE_RANLIB:FILEPATH=/usr/bin/ranlib
@@ -210,13 +210,16 @@ CMAKE_STRIP:FILEPATH=/usr/bin/strip
 CMAKE_VERBOSE_MAKEFILE:BOOL=FALSE
 
 //Value Computed by CMake
-SnowballCLI_BINARY_DIR:STATIC=/home/longlepro01/codingProjs/Snowball/cli/build
+Snowball_BINARY_DIR:STATIC=/home/longlepro01/codingProjs/Snowball/cli/build
 
 //Value Computed by CMake
-SnowballCLI_IS_TOP_LEVEL:STATIC=ON
+Snowball_IS_TOP_LEVEL:STATIC=ON
 
 //Value Computed by CMake
-SnowballCLI_SOURCE_DIR:STATIC=/home/longlepro01/codingProjs/Snowball/cli
+Snowball_SOURCE_DIR:STATIC=/home/longlepro01/codingProjs/Snowball/cli
+
+//The directory containing a CMake configuration file for nlohmann_json.
+nlohmann_json_DIR:PATH=/usr/lib/cmake/nlohmann_json
 
 
 ########################
@@ -366,4 +369,6 @@ CMAKE_STRIP-ADVANCED:INTERNAL=1
 CMAKE_UNAME:INTERNAL=/usr/bin/uname
 //ADVANCED property for variable: CMAKE_VERBOSE_MAKEFILE
 CMAKE_VERBOSE_MAKEFILE-ADVANCED:INTERNAL=1
+//Details about finding nlohmann_json
+FIND_PACKAGE_MESSAGE_DETAILS_nlohmann_json:INTERNAL=[/usr/lib/cmake/nlohmann_json/nlohmann_jsonConfig.cmake][v3.10.5(3.10.5)]
 

@@ -10,6 +10,15 @@ Snowball is a task-centric goal tracking application that helps users turn small
 - **Backend Services**: TypeScript handlers for data management
 - **Data Storage**: JSON-based local storage with plans for SQLite/PostgreSQL
 
+## Project Principles
+
+**CRITICAL CONSTRAINTS:**
+- ⚠️ **This is a LEARNING PROJECT** - Prefer educational approaches and explain design decisions
+- ⚠️ **MUST be cross-platform** - Code must work on macOS, Linux (including WSL), and Windows without modification
+- ⚠️ **NO OS-specific dependencies** - Only use C++ standard library or header-only libraries
+- ⚠️ **NO platform-specific headers** - Avoid `<uuid/uuid.h>` (Linux), `<Rpc.h>` (Windows), or any OS-specific APIs
+- ⚠️ **Portable C++17** - Stick to C++17 standard library features available on all platforms
+
 ## Build and Development Commands
 
 ### C++ CLI Application
